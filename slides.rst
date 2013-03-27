@@ -19,6 +19,8 @@ The elephant in the room
 
   Nope.
 
+  Matt had a good response: http://mattlemay.tumblr.com/post/46004653389/on-pycon
+
 
 Community
 ===========
@@ -60,6 +62,8 @@ Swag
 
  yes you can use mine
 
+ http://raspberry.io/
+
 TALKS
 =======
 
@@ -93,9 +97,10 @@ Video: http://pyvideo.org/video/1777/all-singing-all-dancing-python-bytecode
 How to Write an Interpreter
 ===============================
 
+Slides: https://speakerdeck.com/pyconslides/so-you-want-to-write-an-interpreter-by-alex-gaynor
+
 Video: http://pyvideo.org/video/1694/so-you-want-to-write-an-interpreter
 
-Slides: https://speakerdeck.com/pyconslides/so-you-want-to-write-an-interpreter-by-alex-gaynor
 
 
 Asset Management
@@ -311,3 +316,4 @@ Async IO Examples: PEP 3156 Style (I think)
 That's it
 ============
 
+Links links links: http://bitly.com/bundles/slinkp/2
