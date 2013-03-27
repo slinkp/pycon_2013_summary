@@ -1,0 +1,2 @@
+class DisastrousDatastoreCorruptionKeyError(KeyError):
+    pass
