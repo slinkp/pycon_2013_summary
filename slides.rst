@@ -178,6 +178,23 @@ Slides https://speakerdeck.com/pyconslides/how-to-except-when-youre-excepting-by
 
 I need to remember ``contextlib.contextmanager``.
 
+How to Except When You're Excepting
+===================================
+
+Please don't do this:
+
+ .. image:: img/excepting1.svg
+    :align: left
+    :width: 1200px
+    :height: 100px
+
+...  or else client code will have this problem:
+
+ .. image:: img/excepting2.svg
+    :align: left
+    :width: 1200px
+    :height: 10000px
+
 
 Guido's keynote: Async I/O in Python 3.4
 ========================================
