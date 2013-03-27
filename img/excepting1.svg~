@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<g font-family="monospace" font-size="16px">
+<text x="0" y="16" xml:space="preserve"><tspan fill="#6ab825" font-weight="bold">class</tspan><tspan fill="#d0d0d0">&#160;</tspan><tspan fill="#447fcf">DataStoreDisastrouslyCorruptedError</tspan><tspan fill="#d0d0d0">(</tspan><tspan fill="#bbbbbb">KeyError</tspan><tspan fill="#d0d0d0">)</tspan><tspan fill="#d0d0d0">:</tspan><tspan fill="#d0d0d0"></tspan></text>
+<text x="0" y="37" xml:space="preserve"><tspan fill="#d0d0d0"></tspan><tspan fill="#d0d0d0">&#160;&#160;&#160;&#160;</tspan><tspan fill="#6ab825" font-weight="bold">pass</tspan><tspan fill="#d0d0d0"></tspan></text>
+<text x="0" y="58" xml:space="preserve"><tspan fill="#d0d0d0"></tspan></text></g></svg>
