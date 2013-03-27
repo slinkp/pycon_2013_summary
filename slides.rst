@@ -69,7 +69,6 @@ Apparently __init__ is pronounced:
 
   "Dunder init"
 
-
 Death by a Thousand Leaks
 ==========================
 
@@ -112,6 +111,11 @@ Poster sessions
 
 Facebook global DNS / load-balancing
 
+Poster sessions
+
+================
+
+  .. image:: http://wrongsideofmemphis.files.wordpress.com/2013/03/bfm4h2xcuae_b6p-jpg-large.jpeg?w=300&h=225
 
 Code by Voice
 =============
