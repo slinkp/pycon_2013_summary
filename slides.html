@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>PyCon 2013</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7514 2012-09-14 14:27:12Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/small-black/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/small-black/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/small-black/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/small-black/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/small-black/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>PyCon 2013</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">PyCon 2013</h1>
+
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Display in Handout Mode Only
+============================ -->
+<!-- Incremental Display
+=================== -->
+<p class="center">Quick summary</p>
+<p class="center"><a class="reference external" href="mailto:paul&#64;bit.ly">paul&#64;bit.ly</a></p>
+
+</div>
+<div class="slide" id="the-elephant-in-the-room">
+<h1>The elephant in the room</h1>
+<p class="incremental center">Nope.</p>
+<p class="incremental center">Matt had a good response: <a class="reference external" href="http://mattlemay.tumblr.com/post/46004653389/on-pycon">http://mattlemay.tumblr.com/post/46004653389/on-pycon</a></p>
+</div>
+<div class="slide" id="community">
+<h1>Community</h1>
+<blockquote>
+<img alt="http://static.tumblr.com/34048f704d210cde027e06cc77c8316f/iyst6gu/D8Dmk9tcd/tumblr_static_pycon_header.jpg" src="http://static.tumblr.com/34048f704d210cde027e06cc77c8316f/iyst6gu/D8Dmk9tcd/tumblr_static_pycon_header.jpg" />
+</blockquote>
+<p class="incremental small">2003: approx 200 attendees.</p>
+<p class="incremental small">2008: 1000+, maybe 1% women?</p>
+<p class="incremental small">2013: 2500, 20% women, 6 tracks of talks</p>
+<p class="incremental small tiny">if very determined, you will miss only 96 out of 126 sessions</p>
+</div>
+<div class="slide" id="kids-education">
+<h1>Kids / Education</h1>
+<img alt="https://pbs.twimg.com/media/BGUF6-nCAAENrL4.jpg:medium" src="https://pbs.twimg.com/media/BGUF6-nCAAENrL4.jpg:medium" />
+<p><a class="reference external" href="http://pycon.blogspot.com/2013/03/how-kids-stole-show-young-coders.html">http://pycon.blogspot.com/2013/03/how-kids-stole-show-young-coders.html</a></p>
+</div>
+<div class="slide" id="swag">
+<h1>Swag</h1>
+<img alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD771ygWnMso7vuty6YbRE-9tnU-A5zR2WT43ufiQtrZ362P8I" class="incremental center align-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD771ygWnMso7vuty6YbRE-9tnU-A5zR2WT43ufiQtrZ362P8I" />
+<img alt="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCWLEZ2-WBxTWkeLXWI96Aghk7ELgJ7Ta8jlZXkP_h6ao0d7d8" class="incremental center align-center" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCWLEZ2-WBxTWkeLXWI96Aghk7ELgJ7Ta8jlZXkP_h6ao0d7d8" />
+<p class="incremental center">yes you can use mine</p>
+<p class="incremental center"><a class="reference external" href="http://raspberry.io/">http://raspberry.io/</a></p>
+</div>
+<div class="slide" id="talks">
+<h1>TALKS</h1>
+<p>Apparently __init__ is pronounced:</p>
+<blockquote>
+<p class="incremental">&quot;Dunder init&quot;</p>
+</blockquote>
+</div>
+<div class="slide" id="death-by-a-thousand-leaks">
+<h1>Death by a Thousand Leaks</h1>
+<p>Static analysis: if bitly has C extensions to python, we should look at
+cpychecker; catches a lot of common problems.</p>
+<p><a class="reference external" href="http://gcc-python-plugin.readthedocs.org/en/latest/cpychecker.html">http://gcc-python-plugin.readthedocs.org/en/latest/cpychecker.html</a></p>
+<p>Slides: <a class="reference external" href="https://speakerdeck.com/pyconslides/death-by-a-thousand-leaks-by-david-malcolm">https://speakerdeck.com/pyconslides/death-by-a-thousand-leaks-by-david-malcolm</a></p>
+<p>Video: <a class="reference external" href="http://pyvideo.org/video/1698/death-by-a-thousand-leaks-what-statically-analys">http://pyvideo.org/video/1698/death-by-a-thousand-leaks-what-statically-analys</a></p>
+</div>
+<div class="slide" id="all-singing-all-dancing-python-bytecode">
+<h1>All Singing All Dancing Python Bytecode</h1>
+<p>Slides: <a class="reference external" href="https://speakerdeck.com/pyconslides/all-singing-all-dancing-python-bytecode-by-larry-hastings">https://speakerdeck.com/pyconslides/all-singing-all-dancing-python-bytecode-by-larry-hastings</a></p>
+<p>Video: <a class="reference external" href="http://pyvideo.org/video/1777/all-singing-all-dancing-python-bytecode">http://pyvideo.org/video/1777/all-singing-all-dancing-python-bytecode</a></p>
+</div>
+<div class="slide" id="how-to-write-an-interpreter">
+<h1>How to Write an Interpreter</h1>
+<p>Slides: <a class="reference external" href="https://speakerdeck.com/pyconslides/so-you-want-to-write-an-interpreter-by-alex-gaynor">https://speakerdeck.com/pyconslides/so-you-want-to-write-an-interpreter-by-alex-gaynor</a></p>
+<p>Video: <a class="reference external" href="http://pyvideo.org/video/1694/so-you-want-to-write-an-interpreter">http://pyvideo.org/video/1694/so-you-want-to-write-an-interpreter</a></p>
+</div>
+<div class="slide" id="asset-management">
+<h1>Asset Management</h1>
+<p>roughly, webassets == assetman</p>
+<p>Slides: <a class="reference external" href="https://speakerdeck.com/pyconslides/asset-management-in-python-by-robert-kluin-and-beau-lyddon">https://speakerdeck.com/pyconslides/asset-management-in-python-by-robert-kluin-and-beau-lyddon</a></p>
+</div>
+<div class="slide" id="poster-sessions">
+<h1>Poster sessions</h1>
+<p>Facebook global DNS / load-balancing</p>
+<p>Poster sessions</p>
+<hr class="docutils" />
+<blockquote>
+<img alt="http://wrongsideofmemphis.files.wordpress.com/2013/03/bfm4h2xcuae_b6p-jpg-large.jpeg?w=300&amp;h=225" src="http://wrongsideofmemphis.files.wordpress.com/2013/03/bfm4h2xcuae_b6p-jpg-large.jpeg?w=300&amp;h=225" />
+</blockquote>
+</div>
+<div class="slide" id="code-by-voice">
+<h1>Code by Voice</h1>
+<p>17:15</p>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/8SkdfdXWYaI" frameborder="0" allowfullscreen></iframe></div>
+<div class="slide" id="logical-failures">
+<h1>Logical Failures</h1>
+<p>Logic primer for programmers.</p>
+<p>&quot;It works on my machine&quot;</p>
+<p>Slides <a class="reference external" href="https://speakerdeck.com/pyconslides/logical-failures">https://speakerdeck.com/pyconslides/logical-failures</a></p>
+<p>Video <a class="reference external" href="http://www.pyvideo.org/video/1753/logical-failures">http://www.pyvideo.org/video/1753/logical-failures</a></p>
+</div>
+<div class="slide" id="api-design-for-library-authors">
+<h1>API Design for Library Authors</h1>
+<p>&quot;yo-yo problem&quot;</p>
+<p>Exercise for the reader: in <tt class="docutils literal">pro_api/app/pro.py</tt>:
+look at <tt class="docutils literal">GetClicks</tt>.
+Follow the call chain from <tt class="docutils literal">GetClicks.get()</tt> until a template is rendered.</p>
+<ul class="incremental small simple">
+<li>class 'app.pro.GetClicks'</li>
+<li>class 'app.pro.DecodeBaseHandler'</li>
+<li>class 'app.pro.EnterpriseHandler'</li>
+<li>class 'app.pro.ProBaseHandler'</li>
+<li>class 'app.basic.BaseHandler'</li>
+<li>class 'tornado.web.RequestHandler'</li>
+<li>class 'app.ctron_accessors.ClickatronMixin'</li>
+<li>class 'lib.ArgumentMixin.ArgumentMixin'</li>
+<li>class 'libbitly.statsd_proxy.TimingMetricsMixin'</li>
+<li>class 'libbitly.statsd_proxy.TimingMetrics'</li>
+<li>type 'object'</li>
+</ul>
+</div>
+<div class="slide" id="edupsych-theory-for-python-hackers-a-whirlwind-overview">
+<h1>EduPsych Theory for Python Hackers: A Whirlwind Overview</h1>
+<p>Explaining the value of hacking to academics.</p>
+<p>Video: <a class="reference external" href="http://www.youtube.com/watch?v=D9XJ9K3jfKk">http://www.youtube.com/watch?v=D9XJ9K3jfKk</a></p>
+</div>
+<div class="slide" id="how-to-except-when-you-re-excepting">
+<h1>How to Except When You're Excepting</h1>
+<p>Video <a class="reference external" href="http://www.pyvideo.org/video/1680/how-to-except-when-youre-excepting">http://www.pyvideo.org/video/1680/how-to-except-when-youre-excepting</a></p>
+<p>Slides <a class="reference external" href="https://speakerdeck.com/pyconslides/how-to-except-when-youre-excepting-by-esther-nam">https://speakerdeck.com/pyconslides/how-to-except-when-youre-excepting-by-esther-nam</a></p>
+<p>I need to remember <tt class="docutils literal">contextlib.contextmanager</tt>.</p>
+</div>
+<div class="slide" id="id1">
+<h1>How to Except When You're Excepting</h1>
+<p>Please don't do this:</p>
+<blockquote>
+<object class="align-left" data="img/excepting1.svg" style="width: 1200px; height: 100px;" type="image/svg+xml">
+img/excepting1.svg</object>
+</blockquote>
+<p>...  or else client code will have this problem:</p>
+<blockquote>
+<object class="align-left" data="img/excepting2.svg" style="width: 1200px; height: 10000px;" type="image/svg+xml">
+img/excepting2.svg</object>
+</blockquote>
+</div>
+<div class="slide" id="guido-s-keynote-async-i-o-in-python-3-4">
+<h1>Guido's keynote: Async I/O in Python 3.4</h1>
+<p>Slides: <a class="reference external" href="https://www.dropbox.com/s/xknbe58zcvjhzhv/PyCon2013.pptx">https://www.dropbox.com/s/xknbe58zcvjhzhv/PyCon2013.pptx</a></p>
+<img alt="http://imgs.xkcd.com/comics/standards.png" class="incremental align-center" src="http://imgs.xkcd.com/comics/standards.png" />
+</div>
+<div class="slide" id="async-io-background">
+<h1>Async IO: background</h1>
+<p>1) <em>execution model</em> that allows IO bound applications to handle 10,000s of open
+sockets concurrently w/o tons of threads or processes.</p>
+<p>2) <em>programming models:</em> APIs and language constructs that
+support using IO asynchronously.</p>
+</div>
+<div class="slide" id="async-io-in-python-current-problems-1">
+<h1>Async IO in Python: Current Problems (1)</h1>
+<p>Execution model: Too many similar but incompatible async implementations.</p>
+<p>Tornado != Twisted != ZeroMQ != ...</p>
+<p class="incremental">My main loop is the one true main loop. Go away!</p>
+</div>
+<div class="slide" id="async-io-in-python-current-problems-2">
+<h1>Async IO in Python: Current Problems (2)</h1>
+<p>Progamming model: Multiple competing and very different programming models.</p>
+<ul class="simple">
+<li>explicit (Tornado, Twisted, ...)<ul>
+<li>lots of callbacks and/or deferred objects</li>
+</ul>
+</li>
+<li><em>or</em> implicit (Gevent)<ul>
+<li>looks just like synchronous code</li>
+<li>magic!</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="async-guido-s-proposal">
+<h1>Async: Guido's Proposal</h1>
+<p><a class="reference external" href="http://www.python.org/dev/peps/pep-3156/">http://www.python.org/dev/peps/pep-3156/</a></p>
+<p>PEP 3156 addresses only problem 1: execution model.</p>
+<img alt="http://imgs.xkcd.com/comics/standards.png" class="incremental align-center" src="http://imgs.xkcd.com/comics/standards.png" />
+</div>
+<div class="slide" id="async-proposal-cont-d">
+<h1>Async: Proposal (cont'd)</h1>
+<ul class="incremental simple">
+<li>Python 3.4 std lib will provide default IO loop implementation and API.</li>
+<li>Frameworks will be able to write adapters to/from it.</li>
+<li>Main program can choose which loop to use and adapt all others to it.</li>
+<li>Win: run Tornado, Twisted, ZeroMQ, ... in one process</li>
+</ul>
+</div>
+<div class="slide" id="but">
+<h1>BUT</h1>
+<p>Still 2 programming models.</p>
+<p>PEP 3156 chooses an explicit approach.</p>
+<p>Gevent, Eventlet, Stackless, ... : kind of left out in the cold</p>
+<p>Standard library will remain synchronous for now.  There may eventually be
+async versions of lots of APIs.  Duplication, ugh.</p>
+<p>No fun for frameworks doing implicit IO, eg. ORMs.</p>
+</div>
+<div class="slide" id="async-io-examples-old-tornado-style">
+<h1>Async IO Examples: Old Tornado Style</h1>
+<blockquote>
+<object class="align-left" data="img/async_tornado.svg" style="width: 1200px; height: 1600px;" type="image/svg+xml">
+img/async_tornado.svg</object>
+</blockquote>
+</div>
+<div class="slide" id="async-io-examples-tornado-gen-style">
+<h1>Async IO Examples: tornado.gen Style</h1>
+<blockquote>
+<object class="align-left" data="img/async_tornado_gen.svg" style="width: 1200px; height: 1600px;" type="image/svg+xml">
+img/async_tornado_gen.svg</object>
+</blockquote>
+</div>
+<div class="slide" id="async-io-examples-pep-3156-style-i-think">
+<h1>Async IO Examples: PEP 3156 Style (I think)</h1>
+<blockquote>
+<object class="align-left" data="img/async_pep3156.svg" style="width: 1200px; height: 1600px;" type="image/svg+xml">
+img/async_pep3156.svg</object>
+</blockquote>
+</div>
+<div class="slide" id="that-s-it">
+<h1>That's it</h1>
+<p>Links links links: <a class="reference external" href="http://bitly.com/bundles/slinkp/2">http://bitly.com/bundles/slinkp/2</a></p>
+</div>
+</div>
+</body>
+</html>
